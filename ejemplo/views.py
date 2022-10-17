@@ -25,7 +25,10 @@ def index_tres(request):
     )
 
 def imc(request,peso,altura):
-    imc = peso / altura*altura 
+    altura_en_metros= altura / 100 
+    peso_en_kilos=peso / 100
+    imc= peso_en_kilos / altura_en_metros * altura_en_metros
+    
     return render (request,"ejemplo/imc.html",{"imc": imc})
 
 def mostrar_familiares(request):
