@@ -7,17 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    HOLA ESTO ES UN SALUDO DESDE UN TEMPLATE!!!!
-    {{nombre}},{{apellido}}
-    {% for nota in notas %}
 
-    {% if nota > 5%}
-    <p style="color:blue"> {{nota}} </p>
-    {% else %}
-    <p style="color:red"> {{nota}} </p>
-    {% endif %}
+    <h1>Lista de mis familiares</h1>
 
-    <br>
+    {% for familiar in lista_familiares %}
+        <ul>
+            <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}} </li>
+        </ul>
     {% endfor %}
+    
 </body>
 </html>
