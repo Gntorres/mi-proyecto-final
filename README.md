@@ -1,3 +1,2 @@
 # mi-proyecto-final
-este es mi proyecto final
-:) equipo coder
+este es mi proyecto final!!!!! ...
